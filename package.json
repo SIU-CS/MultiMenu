@@ -1,0 +1,23 @@
+{
+  "name": "angulartutorial",
+  "version": "1.0.0",
+  "description": "Copied and expanded upon CodeAcademy's AngularJS tutorial.",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "firefox index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-Wichmann/AngularTutorial.git"
+  },
+  "author": "Andrew Wichmann",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Andrew-Wichmann/AngularTutorial/issues"
+  },
+  "homepage": "https://github.com/Andrew-Wichmann/AngularTutorial#readme"
+}

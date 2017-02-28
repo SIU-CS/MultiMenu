@@ -1,5 +1,14 @@
-app.controller('MenuController', ['$scope', function($scope) {
-  $scope.menu = [
+app.controller('MenuController', ['$scope', 'menudatabase', 'restaurantnamedatabase', function($scope, menudatabase, restaurant_name_database) {
+  menudatabase.success(function(data) {
+    $scope.menu = data
+  });
+  /*restaurantnamedatabase.success(function(data) {
+    console.log(data);
+    $scope.restaurant_name = data
+  });
+  
+  
+  /*$scope.menu = [
     { 
       image: 'img/move.jpg', 
       dish: 'MOVE', 
@@ -24,7 +33,7 @@ app.controller('MenuController', ['$scope', function($scope) {
       discription: 'Intuit Inc',
       price: 9.99
     },
-  ];
+  ];*/
 }]);
 
 console.log("Menucontroller loaded");

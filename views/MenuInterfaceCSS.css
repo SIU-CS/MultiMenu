@@ -1,0 +1,53 @@
+html, body
+{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+div
+{
+	width: 50%; 
+	height: 50%; 
+	float: left;
+}
+
+
+.MenuTranslate
+{
+	color: #000000;
+	background-color: none;
+}
+
+h1
+{
+	font-size: 600%;
+	font-family: "Comics Sans MS", cursive, sans-serif;
+	text-align: center;
+}
+
+h2
+{
+	font-size: 600%;
+	font-family: "Comics Sans MS", cursive, sans-serif;
+}
+
+#div1
+{
+	background-color: #2e8b57;
+}
+
+#div2
+{
+	background-color: #87cefa;
+}
+
+#div3
+{
+	background-color: #da7026;
+}
+
+#div4
+{
+	background-color: #d6cf13;
+}

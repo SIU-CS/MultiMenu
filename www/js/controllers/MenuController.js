@@ -1,11 +1,11 @@
-app.controller('MenuController', ['$scope', 'menudatabase', 'restaurantnamedatabase', function($scope, menudatabase, restaurant_name_database) {
+app.controller('MenuController', ['$scope', 'menudatabase', function($scope, menudatabase) {
   menudatabase.success(function(data) {
     $scope.menu = data
-  });
-  /*restaurantnamedatabase.success(function(data) {
+  });/*
+  restaurantnamedatabase.success(function(data) {
     console.log(data);
     $scope.restaurant_name = data
-  });
+  })
   
   
   /*$scope.menu = [

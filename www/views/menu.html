@@ -16,9 +16,14 @@
             
       <menuInfo item="menuItem"></menuInfo>
       -->
-      <img class="icon" ng-src="{{ menuItem.image }}"> 
-      <h3 class="title">{{ menuItem.dish }}</h3> 
-      <p class="developer">{{ menuItem.discription }}</p> 
-      <p class="price">{{ menuItem.price | currency }}</p>
+      <div style=float:left>
+        <div class="glyphicon glyphicon-ok-circle" aria-hidden="true"></div>
+      </div>
+      <div style=float:left>
+        <img class="icon" ng-src="{{ menuItem.image }}"> 
+        <h3 class="title">{{ menuItem.dish }}</h3> 
+        <p class="developer">{{ menuItem.discription }}</p> 
+        <p class="price">{{ menuItem.price | currency }}</p>
+      </div>
     </div>
 </div>

@@ -2,7 +2,7 @@ var app = angular.module('GalleryApp', ['ngRoute']);
 app.config(function ($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'views/home.html',
+      templateUrl: 'views/MenuInterface.html',
     })
     .when('/menu', {
       controller: 'MenuController',

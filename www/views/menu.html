@@ -1,5 +1,5 @@
-<div class="main" ng-controller="MenuController">
-    <div class="container"><h2>{{ $scope.restaurant_name }}</h2></div>
+<div class="main" ng-controller="MenuController" id="menu">
+    <div class="container"><h2>{{ restaurant_name }}</h2></div>
     <div class="container" ng-repeat="menuItem in menu">
       <!--  this directive injects
               {{ menuItem.blahblah1 }}
@@ -17,7 +17,7 @@
       <menuInfo item="menuItem"></menuInfo>
       -->
       <img class="icon" ng-src="{{ menuItem.image }}"> 
-      <h2 class="title">{{ menuItem.dish }}</h2> 
+      <h3 class="title">{{ menuItem.dish }}</h3> 
       <p class="developer">{{ menuItem.discription }}</p> 
       <p class="price">{{ menuItem.price | currency }}</p>
     </div>

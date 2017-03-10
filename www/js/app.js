@@ -8,6 +8,10 @@ app.config(function ($routeProvider) {
       controller: 'MenuController',
       templateUrl: 'views/menu.html',
     })
+    .when('/info', {
+      controller: 'InfoController',
+      templateUrl: 'views/info.html',
+    })
     .otherwise({
       redirectTo: '/'
   });

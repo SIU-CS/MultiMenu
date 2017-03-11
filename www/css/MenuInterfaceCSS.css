@@ -13,7 +13,7 @@ html, body
 }
 
 
-.MenuTranslate
+.HomePageItems
 {
 	color: #000000;
 	background-color: none;
@@ -34,7 +34,12 @@ h2
 
 #menu
 {
-	background-color: #2e8b57;
+	background-color: #21a025;
+}
+
+#info
+{
+	background-color: #9257af;
 }
 
 #social_media
@@ -44,10 +49,10 @@ h2
 
 #nutritional_info
 {
-	background-color: #da7026;
+	background-color: #f2b843;
 }
 
 #games
 {
-	background-color: #d6cf13;
+	background-color: #fffdb7;
 }

@@ -1,29 +1,27 @@
 <div class="main" ng-controller="MenuController" id="menu">
     <div class="container"><h2>{{ restaurant_name }}</h2></div>
-    <div class="container" ng-repeat="menuItem in menu">
+    <div class="container" ng-repeat="item in menu">
       <!--  this directive injects
               {{ menuItem.blahblah1 }}
               {{ menuItem.blahblah2 }}
               
               {{ menuItem.blahblah1 }}
               {{ menuItem.blahblah2 }}
-            not the desirder
+            not the desired
               {{ move.blahblah1 }}
               {{ move.blahblah2 }}
               
               {{ shutterbugg.blahblah1 }}
               {{ shutterbugg.blahblah2 }}
-            
+           
       <menuInfo item="menuItem"></menuInfo>
       -->
-      <div style=float:left>
-        <div class="glyphicon glyphicon-ok-circle" aria-hidden="true"></div>
-      </div>
-      <div style=float:left>
-        <img class="icon" ng-src="{{ menuItem.image }}"> 
-        <h3 class="title">{{ menuItem.dish }}</h3> 
-        <p class="developer">{{ menuItem.discription }}</p> 
-        <p class="price">{{ menuItem.price | currency }}</p>
+      <dishavailable item="item"></dishavailable>
+      <div>
+        <img class="icon" ng-src="{{ item.image }}"/> 
+        <h3 class="title">{{ item.dish }}</h3> 
+        <p class="developer">{{ item.discription }}</p> 
+        <p class="price">{{ item.price | currency }}</p>
       </div>
     </div>
 </div>

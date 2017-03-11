@@ -1,4 +1,4 @@
-var app = angular.module('GalleryApp', ['ngRoute']);
+var app = angular.module('multiMenuApp', ['ngRoute']);
 app.config(function ($routeProvider) {
   $routeProvider
     .when('/', {

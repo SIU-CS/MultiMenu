@@ -1,24 +1,7 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
+        <meta charset="utf-8">
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
@@ -31,7 +14,6 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <meta charset="utf-8">
         
         <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
@@ -47,7 +29,7 @@
     </head>
     
     
-    <body ng-app="GalleryApp">
+    <body ng-app="multiMenuApp">
     <div id="google_translate_element"></div>
     <div ng-view></div>
 
@@ -55,10 +37,12 @@
 
     <!-- Modules -->
     <script src="js/app.js"></script>
+    
+    <!-- Directives -->
+    <script src="js/directives/dishAvailable.js"></script>
 
     <!-- Controllers -->
     <script src="js/controllers/HomeController.js"></script>
-    <script src="js/controllers/PhotoController.js"></script>
     <script src="js/controllers/MenuController.js"></script>
 
     <!-- Services -->

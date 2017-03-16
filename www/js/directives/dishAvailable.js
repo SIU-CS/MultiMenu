@@ -4,12 +4,12 @@ app.directive('dishavailable', function(){
     scope:{
       item: '='
     },
-    templateUrl: "views/dishAvailable.html",
+    templateUrl: "views/menuItem.html",
     link: function(scope, element, attrs){
       if(scope.item.available === "yes") {
-        element.toggleClass("glyphicon glyphicon-ok-circle"); 
+        element.before('<img src="img/checkmark.svg">'); 
       } else {
-        element.toggleClass("glyphicon glyphicon-ban-circle"); 
+        element.before('<img src="img/blackx.png">'); 
       }
     },
   };

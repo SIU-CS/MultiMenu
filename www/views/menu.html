@@ -1,27 +1,16 @@
 <div class="main" id="menu">
-    <div class="container"><h2>{{ restaurant_name }}</h2></div>
+  
+    <!--Restaurant name followed by the listing of the menu items -->
+    <div class="container"><h3>{{ restaurant_name }}</h3></div>
     <div class="container" ng-repeat="item in menu">
-      <!--  this directive injects
-              {{ menuItem.blahblah1 }}
-              {{ menuItem.blahblah2 }}
-              
-              {{ menuItem.blahblah1 }}
-              {{ menuItem.blahblah2 }}
-            not the desired
-              {{ move.blahblah1 }}
-              {{ move.blahblah2 }}
-              
-              {{ shutterbugg.blahblah1 }}
-              {{ shutterbugg.blahblah2 }}
-           
-      <menuInfo item="menuItem"></menuInfo>
-      -->
-      <dishavailable item="item"></dishavailable>
-<!--      <div>
-        <img class="icon" style="float:left" ng-src="{{ item.image }}"/> 
-        <h3 class="title" style="float:left" >{{ item.dish }}</h3> 
-        <p class="developer" style="float:left" >{{ item.discription }}</p> 
-        <p class="price" style="float:left" >{{ item.price | currency }}</p>
-      </div>-->
+      <menuitem item="item"></menuavailable>
     </div>
+    
+    <!--The key the specifies the meaning of the images-->
+    <hr style="border-color:black">
+    <div class="container">
+      <img src="img/checkmark.svg">Available</img>
+      <img src="img/blackx.png">Not available</img>
+    </div>
+    <br></br>
 </div>

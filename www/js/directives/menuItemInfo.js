@@ -1,4 +1,4 @@
-app.directive('dishavailable', function(){
+app.directive('menuitem', function(){
   return{
     restrict: 'E',
     scope:{

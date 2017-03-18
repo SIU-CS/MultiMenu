@@ -7,9 +7,9 @@ app.directive('menuitem', function(){
     templateUrl: "views/menuItem.html",
     link: function(scope, element, attrs){
       if(scope.item.available === "yes") {
-        element.before('<img src="img/checkmark.svg">'); 
+        element.before('<img class="pull-left" src="img/checkmark.svg">'); 
       } else {
-        element.before('<img src="img/blackx.png">'); 
+        element.before('<img class="pull-left" src="img/blackx.png">'); 
       }
     },
   };

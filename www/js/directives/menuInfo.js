@@ -1,4 +1,4 @@
-app.directive('menuInfo', function() { 
+app.directive('info', function() { 
   return { 
     restrict: 'EA', 
     scope: { 

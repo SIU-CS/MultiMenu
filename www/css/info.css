@@ -1,0 +1,37 @@
+body{
+    background-color:purple;  
+     background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-image: ;
+    background-position:  ;
+   background-size:;
+   
+    
+    
+	
+Background-attachment: scroll;
+     margin-right: 200px;
+    text-indent: 30px;
+    font-style: italic;
+		font-weight: normal;
+		font-family: Times New Romanl;
+}
+
+h1 {
+    color:black;
+    text-align: center;
+    
+   
+}
+
+h2 {
+   
+    
+    font-size: 25px;
+    
+	
+}
+p{text-indent: 40px;
+    color: white;
+    
+}

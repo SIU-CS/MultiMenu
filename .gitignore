@@ -1,4 +1,2 @@
-
-www/index.html
-
-www/img/background.jpeg
+platforms/
+node_modules/

@@ -1,6 +1,6 @@
 body{
     background-color:purple;  
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed ;
     background-image: ;
     background-position:  ;
@@ -20,12 +20,13 @@ Background-attachment: scroll;
 h1 {
     color:black;
     text-align: center;
+    font-size:30px;
     
    
 }
 
 h2 {
-   
+   margin-right:25px;
     
     font-size: 25px;
     

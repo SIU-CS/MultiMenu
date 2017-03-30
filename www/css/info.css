@@ -1,38 +1,25 @@
-body{
-    background-color:purple;  
-    background-repeat: no-repeat;
-    background-attachment: fixed ;
-    background-image: ;
-    background-position:  ;
-   background-size:;
-   
-    
-    
-	
-Background-attachment: scroll;
-     margin-right: 200px;
-    text-indent: 30px;
-    font-style: italic;
-		font-weight: normal;
-		font-family: Times New Romanl;
-}
+#info
+{
+	background-color: #9257af;
+}    
 
-h1 {
+.note{
+    color:deepskyblue;
+}
+.red{color: red;}
+
+.myh1 {
     color:black;
     text-align: center;
-    font-size:30px;
-    
-   
+    font-size:30px; 
 }
 
-h2 {
-   margin-right:25px;
-    
+.myh2 {
+   margin-left:25px;
+     text-align: left;
     font-size: 25px;
-    
-	
 }
+
 p{text-indent: 40px;
-    color: white;
-    
+    color: ligth black;
 }

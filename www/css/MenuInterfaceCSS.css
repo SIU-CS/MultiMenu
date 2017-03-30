@@ -18,18 +18,9 @@ html, body
 	color: #000000;
 	background-color: none;
 }
-
-h1
+.sizeAdjust
 {
-	font-size: 600%;
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	text-align: center;
-}
-h2
-{
-	font-size: 500%;
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	text-align: center;
+	font-size: 250%;
 }
 
 #menu

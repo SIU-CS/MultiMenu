@@ -13,12 +13,11 @@ app.directive('converter', function() {
           $("#currency-drop-down").append('<li class='+i+'>' + symbol + '</li>');          
           $("."+i).on('click', function(){
             for(var j=0; j<Object.keys(scope.menu).length; j++){
-              //console.log(fx.convert(scope.menu[j].price, {from: "USD", to: this.innerHTML}));
               scope.menu[j].price = fx.convert(scope.menu[j].price, {from: "USD", to: this.innerHTML});
-              console.log(scope.menu[j].price);
+              scope.$apply();
             }
           });
-      }
+        }
       });
     }
   }; 

@@ -7,8 +7,10 @@
     "angular": "^1.6.2"
   },
   "devDependencies": {
-    "ionic": "2.2.2",
-    "cordova": "6.5.0"
+    "cordova": "^6.5.0",
+    "ionic": "^2.2.1",
+    "karma-cli": "^1.0.1",
+    "phantomjs": "^2.1.7"
   },
   "scripts": {
     "postinstall": "ionic state restore",

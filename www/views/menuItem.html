@@ -1,6 +1,6 @@
 <img class="icon" ng-src="{{ item.image }}"/>
 <h3 class="menuItemTitle">{{ item.dish }}</h3> 
 <p class="menuItemDescription">{{ item.discription }}</p> 
-<p class="menuItemPrice">{{ item.price | currency }}</p>
+<p class="menuItemPrice">{{ item.price | isoCurrency : item.currency : 2}}</p>
 <br>
 <br>

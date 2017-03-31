@@ -1,6 +1,19 @@
 <img class="icon" ng-src="{{ item.image }}"/>
-<h3 class="menuItemTitle">{{ item.dish }}</h3> 
-<p class="menuItemDescription">{{ item.discription }}</p> 
-<p class="menuItemPrice">{{ item.price | currency }}</p>
-<br>
-<br>
+<table border="1" width=100%>
+	<tr>
+	<td width=66%>
+		<h3 class="menuItemTitle">{{ item.dish }}</h3>
+		<p class="menuItemDescription">{{ item.discription }}</p> 
+		<p class="menuItemPrice">{{ item.price | currency }}</p>
+		<br>
+		<br>
+	</td>
+	<td width=34%>
+		<p>{{ item.calories }}</p>
+		<p>{{ item.fat }}</p>
+		<p>{{ item.sugar }}</p>
+		<p>{{ item.sodium }}</p>
+		<p>{{ item.protein }}</p>
+	</td>
+	</tr>
+</table>

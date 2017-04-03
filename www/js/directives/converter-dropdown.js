@@ -13,10 +13,10 @@ app.directive('converter', function() {
           $("."+i).on('click', function(){
             scope.currency = this.innerHTML;
             for(var j=0; j<Object.keys(scope.menu).length; j++){
-              scope.menu[j].price = fx.convert(scope.menu[j].price, {from: "USD", to: scope.currency});
+              scope.menu[j].price = fx.convert(scope.menu[j].price, {from: scope.menu[j].currency, to: scope.currency});
               scope.menu[j].currency = scope.currency;
               scope.$apply();
-            }
+            };
           });
         }
       });

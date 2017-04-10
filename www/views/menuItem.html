@@ -13,24 +13,29 @@ td{
 
 <table>
 	<tr>
-	<td width=50%>
-		<h3 class="menuItemTitle">{{ item.dish }}</h3>
-		<p class="menuItemDescription">{{ item.discription }}</p> 
-		<p class="menuItemPrice">{{ item.price | isoCurrency : item.currency : 2}}</p>
-		<br>
-		<br>
-	</td>
-	<td width=50%>
-		<p>Calories: {{item.calories }}</p>
-		<p>Fat: {{item.fat }}</p>
-		<p>Sugar: {{item.sugar }}</p>
-		<p>Sodium: {{item.sodium }}</p>
-		<p>Protein: {{item.protein }}</p>
-	</td>
+		<td width=50%>
+			<h3 class="menuItemTitle">{{ item.dish }}</h3>
+			<p class="menuItemDescription">{{ item.discription }}</p> 
+			<p class="menuItemPrice">{{ item.price | isoCurrency : item.currency : 2}}</p>
+			<br>
+			<br>
+		</td>
+		<td width=50%>
+			<p>Calories: {{item.calories }}</p>
+			<p>Fat: {{item.fat }}</p>
+			<p>Sugar: {{item.sugar }}</p>
+			<p>Sodium: {{item.sodium }}</p>
+			<p>Protein: {{item.protein }}</p>
+		</td>
 	</tr>
 	<tr>
 		<td>
-		<p>Dish Rating: {{item.stars}}</p>
+			<p>Dish Rating: {{item.stars}}</p>
+		</td>
+		<td>
+			<center>
+			<img src="/home/benmc/MultiMenu/www/img/{{ item.dish }}.jpg" height="150" width="175">
+			</center>
 		</td>
 	</tr>
 </table>

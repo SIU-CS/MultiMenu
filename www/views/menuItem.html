@@ -15,7 +15,7 @@ td{
 	<tr>
 		<td width=50%>
 			<h3 class="menuItemTitle">{{ item.dish }}</h3>
-			<p class="menuItemDescription">{{ item.discription }}</p> 
+			<p class="menuItemDescription">{{ item.description }}</p> 
 			<p class="menuItemPrice">{{ item.price | isoCurrency : item.currency : 2}}</p>
 			<br>
 			<br>
@@ -34,7 +34,7 @@ td{
 		</td>
 		<td>
 			<center>
-			<img src="/home/benmc/MultiMenu/www/img/{{ item.dish }}.jpg" height="150" width="175">
+			<img src="img/{{ item.dish }}.jpg" height="150" width="175">
 			</center>
 		</td>
 	</tr>

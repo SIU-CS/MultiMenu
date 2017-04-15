@@ -1,6 +1,5 @@
 app.controller('MenuController', ['$scope', 'menudatabase', 'restaurantnamedatabase', 'exchangerates', function ($scope, menudatabase, restaurantnamedatabase, exchangerates) {
 
-
   menudatabase.success(function (data) {
     $scope.menu = data
   });

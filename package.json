@@ -15,6 +15,10 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "phantomjs": "^2.1.7"
   },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-x-socialsharing"
+  ],
   "scripts": {
     "postinstall": "ionic state restore",
     "test": "firefox index.html"

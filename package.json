@@ -19,6 +19,9 @@
     "cordova-plugin-whitelist",
     "cordova-plugin-x-socialsharing"
   ],
+  "cordovaPlatforms": [
+    "android"
+  ],
   "scripts": {
     "postinstall": "ionic state restore",
     "test": "firefox index.html"

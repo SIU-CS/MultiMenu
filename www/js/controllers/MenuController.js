@@ -1,6 +1,5 @@
 app.controller('MenuController', ['$scope', 'menudatabase', 'restaurantnamedatabase', 'exchangerates', function ($scope, menudatabase, restaurantnamedatabase, exchangerates) {
 
-
   menudatabase.success(function (data) {
     $scope.menu = data
   });
@@ -8,13 +7,14 @@ app.controller('MenuController', ['$scope', 'menudatabase', 'restaurantnamedatab
 
   restaurantnamedatabase.success(function (data) {
     $scope.restaurant_name = data;
-    console.log("Debug: MenuController.js set $scope.restaurant_name = " + $scope.restaurant_name);
   });
 
-  exchangerates.success(function (data) {
+  var myDataPromise = exchangerates.getData();
+  myDataPromise.then(function(data) {
     if (typeof fx !== "undefined" && fx.rates) {
       fx.rates = data.rates;
       fx.base = data.base;
+      console.log("Success");
     } else {
       // If not, apply to fxSetup global:
       var fxSetup = {
@@ -22,8 +22,6 @@ app.controller('MenuController', ['$scope', 'menudatabase', 'restaurantnamedatab
         base: data.base
       }
     };
-  });
+  })
 
 }]);
-
-console.log("Menucontroller loaded");

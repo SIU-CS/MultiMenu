@@ -4,6 +4,6 @@ app.directive('info', function() {
     scope: { 
       item: '=' 
     }, 
-    templateUrl: 'js/directives/menuItemInfo.html' 
+    templateUrl: 'js/views/menuItemInfo.html' 
   }; 
 });

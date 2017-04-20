@@ -9,7 +9,7 @@ app.config(function ($routeProvider) {
       templateUrl: 'views/menu.html',
     })
     .when('/info', {
-      controller: 'InfoController',
+      //controller: 'InfoController',
       templateUrl: 'views/info.html',
     })
     .when('/recommendation', {

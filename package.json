@@ -1,23 +1,31 @@
 {
-  "name": "angulartutorial",
+  "name": "MultiMenu",
   "version": "1.0.0",
-  "description": "Copied and expanded upon CodeAcademy's AngularJS tutorial.",
-  "main": "index.js",
+  "description": "Create a menu for the global restaurant patron. Primarily, MultiMenu provides useability to users through menu translation and price conversion.",
+  "main": "www/index.html",
   "dependencies": {
     "angular": "^1.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cordova": "^6.5.0",
+    "ionic": "^2.2.1",
+    "karma": "^1.5.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs": "^2.1.7"
+  },
   "scripts": {
+    "postinstall": "ionic state restore",
     "test": "firefox index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andrew-Wichmann/AngularTutorial.git"
+    "url": "git+https://github.com/SIU-CS/MultiMenu.git"
   },
   "author": "Andrew Wichmann",
-  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Andrew-Wichmann/AngularTutorial/issues"
+    "url": "https://github.com/SIU-CS/MultiMenu/issues"
   },
-  "homepage": "https://github.com/Andrew-Wichmann/AngularTutorial#readme"
+  "homepage": "https://github.com/SIU-CS/MultiMenu#readme"
 }

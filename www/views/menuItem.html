@@ -13,14 +13,17 @@ td{
 
 <table>
 	<tr>
-		<td width=50%>
+		<td width=34% rowspan="2">
+			<center>
+			<img src="img/{{ item.id }}.jpg" height="150" width="175">
+			</center>
+		</td>
+		<td width=33%>
 			<h3 class="menuItemTitle">{{ item.dish }}</h3>
 			<p class="menuItemDescription">{{ item.description }}</p> 
 			<p class="menuItemPrice">{{ item.price | isoCurrency : item.currency : 2}}</p>
-			<br>
-			<br>
 		</td>
-		<td width=50%>
+		<td width=33% rowspan="2">
 			<p>Calories: {{item.calories }}</p>
 			<p>Fat: {{item.fat }}</p>
 			<p>Sugar: {{item.sugar }}</p>
@@ -32,10 +35,6 @@ td{
 		<td>
 			<p>Dish Rating: {{item.stars}}</p>
 		</td>
-		<td>
-			<center>
-			<img src="img/{{ item.dish }}.jpg" height="150" width="175">
-			</center>
-		</td>
+		
 	</tr>
 </table>

@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: '..',
 
 
     // frameworks to use
@@ -20,7 +20,8 @@ module.exports = function(config) {
       'www/js/shared/angular-route.min.js',
       'www/js/shared/money.js',
       'www/js/app.js',
-      'unit/*.js'
+      'www/js/filters/*',
+      'test/unit/*.js'
     ],
 
 

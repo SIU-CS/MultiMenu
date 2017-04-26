@@ -19,6 +19,7 @@ module.exports = function(config) {
       'www/js/shared/angular-mock.js',
       'www/js/shared/angular-route.min.js',
       'www/js/shared/money.js',
+      'www/js/shared/accounting.js',
       'www/js/app.js',
       'www/js/filters/*',
       'test/unit/*.js'

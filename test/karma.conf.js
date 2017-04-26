@@ -15,11 +15,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '../shared/angular.min.js',
-      '../shared/angular-mock.js',
-      '../shared/angular-route.min.js',
-      '../shared/money.js',
-      '../app.js',
+      'www/js/shared/angular.min.js',
+      'www/js/shared/angular-mock.js',
+      'www/js/shared/angular-route.min.js',
+      'www/js/shared/money.js',
+      'www/js/app.js',
       'unit/*.js'
     ],
 

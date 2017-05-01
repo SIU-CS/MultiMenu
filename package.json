@@ -17,7 +17,7 @@
   },
   "scripts": {
     "postinstall": "ionic state restore",
-    "test": "firefox index.html"
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",

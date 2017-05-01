@@ -13,10 +13,10 @@
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
-    "phantomjs": "^2.1.7"
+    "phantomjs-rebuilt": "^2.1.7"
   },
   "scripts": {
-    "postinstall": "ionic state restore",
+    "postinstall": "./node_modules/.bin/ionic state restore",
     "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {

@@ -17,7 +17,7 @@
   },
   "scripts": {
     "postinstall": "./node_modules/.bin/ionic state restore",
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+    "test": "cd test && ../node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",

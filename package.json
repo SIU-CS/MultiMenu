@@ -13,11 +13,12 @@
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
-    "phantomjs": "^2.1.7"
+    "jasmine-core": "^2.6.1",
+    "phantomjs-prebuilt": "^2.1.7"
   },
   "scripts": {
-    "postinstall": "ionic state restore",
-    "test": "firefox index.html"
+    "postinstall": "./node_modules/.bin/ionic state restore",
+    "test": "cd test && ../node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",

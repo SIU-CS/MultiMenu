@@ -1,25 +1,23 @@
-#info
-{
-	background-color: #9257af;
-}    
-
 .note{
-    color:deepskyblue;
+    color: deepskyblue;
 }
-.red{color: red;}
+.red{
+    color: red;
+    text-indent: 40px;
+}
 
 .myh1 {
-    color:black;
+    color: light black;
     text-align: center;
-    font-size:30px; 
 }
 
 .myh2 {
-   margin-left:25px;
-     text-align: left;
+    margin-left: 25px;
+    text-align: left;
     font-size: 25px;
 }
 
-.myp {text-indent: 40px;
-    color: ligth black;
+.myp {
+    text-indent: 40px;
+    color: light black;
 }

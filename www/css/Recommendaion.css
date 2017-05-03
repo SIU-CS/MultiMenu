@@ -5,18 +5,19 @@
 }
 .red{color: red;}
 
-h1 {
+.recommendh1 {
     color:black;
     text-align: center;
     font-size:30px; 
 }
 
-h2 {
+.recommendh2 {
    margin-left:25px;
      text-align: left;
     font-size: 25px;
 }
 
-p {text-indent: 40px;
+.recommendp {
+    text-indent: 40px;
     color: ligth black;
 }

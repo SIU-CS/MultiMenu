@@ -7,7 +7,6 @@ module.exports = function(config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '..',
 
-
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
@@ -15,6 +14,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'www/js/shared/jquery.min.js',
       'www/js/shared/angular.min.js',
       'www/js/shared/angular-mock.js',
       'www/js/shared/angular-route.min.js',
@@ -22,7 +22,9 @@ module.exports = function(config) {
       'www/js/shared/accounting.js',
       'www/js/app.js',
       'www/js/filters/*',
-      'test/unit/*.js'
+      'www/js/directives/*.js',
+      'test/unit/menuitemtest.js',
+      'www/views/*.html'
     ],
 
 
@@ -34,6 +36,13 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'www/views/*.html': 'ng-html2js'
+    },
+
+    ngHtml2JsPreprocessor: {
+      // strip this from the file path
+      stripPrefix: 'www/',
+      moduleName: 'foo'
     },
 
 

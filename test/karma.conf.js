@@ -23,8 +23,8 @@ module.exports = function(config) {
       'www/js/app.js',
       'www/js/filters/*',
       'www/js/directives/*.js',
-      'www/views/*.html',
-      'test/unit/*.js'
+      'test/unit/*.js',
+      'www/views/*.html'
     ],
 
 
